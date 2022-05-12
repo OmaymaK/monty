@@ -1,7 +1,11 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <ctype.h>
 
 /* structures */
 
@@ -38,3 +42,6 @@ typedef struct instruction_s
 
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
+#endif
