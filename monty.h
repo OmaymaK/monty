@@ -39,7 +39,11 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 /* prototypes */
-
+int value;
+void _free(stack_t **stack);
+int check_digit(char *value);
+void execute_monty(FILE *file, stack_t **stack);
+int get_opcode(char *op, unsigned int line_number, stack_t **stack);
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
