@@ -149,7 +149,7 @@ The opcode rotl rotates the stack to the top.
 Implement the rotr opcode.
 The rotr opcode
 The opcode rotr rotates the stack to the bottom.
-Autors
-Jaafar Fares - https://github.com/jaafarfares
+## Autors
+* [Jaafar Fares](https://github.com/jaafarfares)
 
-Omayma Korbi - https://github.com/OmaymaK
+* [Omayma Korbi](https://github.com/OmaymaK)
