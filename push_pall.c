@@ -59,8 +59,12 @@ void push(stack_t **stack, unsigned int line_number)
 	node->prev = NULL;
 	node->next = *stack;
 	if (*stack == NULL)
+	{
 		*stack = node;
+		return;
+	}
 	(*stack)->prev = node;
+	*stack = node;
 }
 /**
  * pall - print the stacks's value
