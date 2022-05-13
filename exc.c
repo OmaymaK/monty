@@ -41,10 +41,12 @@ void execute_monty(FILE *file, stack_t **stack)
 	while (getline(&line, &size, file) != EOF)
 	{
 		token = strtok(line, " \t\r\n");
-		n = strtok(NULL, " \t\r\n");
 		l++;
+		if (token == NULL)
+			continue;
 		if (strcmp(token, "push") == 0)
 		{
+			n = strtok(NULL, " \t\r\n");
 			if (check_digit(n) == 0)
 			{
 				fprintf(stderr, "L%u: usage: push integer\n", l);
