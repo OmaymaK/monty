@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _pop - remove element a list
+ * pop - remove element a list
  *@stack: pointer to first node
  *@line_number: integer
  *Return: void
