@@ -11,6 +11,7 @@ int get_opcode(char *op, unsigned int line_number, stack_t **stack)
 	instruction_t operation[] = {
 	{"push", push},
 	{"pall", pall},
+	{"pop", pop},
 	{"pint", pint},
 	{"nop", nop},
 	{NULL, NULL}
