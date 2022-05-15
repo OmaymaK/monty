@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	FILE *file;
+	FILE *file = NULL;
 	stack_t *stack = NULL;
 
 	if (argc != 2)
