@@ -55,6 +55,7 @@ void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 void queue2(stack_t **stack, unsigned int line_number);
 void stack2(stack_t **stack, unsigned int line_number);
+void _div(stack_t **stack, unsigned int line_number);
 
 
 
