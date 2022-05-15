@@ -20,6 +20,7 @@ int get_opcode(char *op, unsigned int line_number, stack_t **stack)
 	{"rotl", rotl},
 	{"rotr", rotr},
 	{"pstr", pstr},
+	{"div", div},
 	{NULL, NULL}
 	};
 	int i;
