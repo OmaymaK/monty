@@ -3,7 +3,7 @@
  * main - main entry
  * @argc: Total of arguments
  * @argv: Arguments
- * Return: success or failure
+ * Return: .....
  */
 int main(int argc, char *argv[])
 {
@@ -13,13 +13,13 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
-		return (EXIT_SUCCESS);
+		return (EXIT_FAILURE);
 	}
 	file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file%s\n", argv[1]);
-		return (EXIT_SUCCESS);
+		return (EXIT_FAILURE);
 	}
 	execute_monty(file, &stack);
 	fclose(file);
