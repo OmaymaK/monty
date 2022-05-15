@@ -39,6 +39,9 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 /* prototypes */
+
+
+
 int value;
 void _free(stack_t **stack);
 int check_digit(char *value);
