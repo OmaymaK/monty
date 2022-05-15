@@ -11,7 +11,8 @@ void rotl(stack_t **stack, unsigned int line_number)
 
 	if (ptr == NULL || ptr->next == NULL)
 		return;
-	for (ptr->next; ptr = ptr->next)
+	for (; ptr->next; ptr = ptr->next)
+		;
 	*stack = (*stack)->next;
 	(*stack)->prev = NULL;
 	ptr->next = current;
