@@ -60,5 +60,5 @@ void rotr(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 void divv( stack_t **stack, unsigned int line_number);
 void mult( stack_t **stack, unsigned int line_number);
-
+void modd( stack_t **stack, unsigned int line_number);
 #endif
