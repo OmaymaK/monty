@@ -7,7 +7,7 @@
  */
 void stack2(stack_t **stack, unsigned int line_number)
 {
-	(void)stack;
+/bin/bash: q: command not found
 	(void)line_number;
 }
 /**
